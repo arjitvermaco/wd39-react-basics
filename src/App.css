@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-icons svg{
+    height: 32px;
+    width: 32px;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main{
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main h3{
+    margin: 50px 0;
+    font-weight: 300;
+}
+
+main h1{
+    font-weight: 500;
+}
+
+main button{
+    border: none;
+    background-color: #026e00;
+    margin: 10px 4px;
+    padding: 20px 8px;
+    font-size: 32px;
+    color: white;
+    border-radius: 6px;
+    line-height: 1.2;
+}
+
+main button span{
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+footer{
+   position: absolute;
+   bottom: 0;
+   background-color: #333;
+   color: white;
+   padding: 30px 20%;
+   text-align: center;
+   font-size: 12px;
+   font-weight: 300;
 }
